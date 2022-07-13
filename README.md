@@ -1,6 +1,6 @@
 # yfinance-float-scraper
 
-This program pulls the current price + the stock float information from Yahoo Finance in about 8 seconds.
+This program pulls the current price + the stock float information from Yahoo Finance in about 9 seconds.
 
 It is meant to help day traders bring down the process of checking news and making a fast decision.
 
