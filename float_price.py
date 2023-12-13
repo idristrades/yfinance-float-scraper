@@ -7,10 +7,10 @@ symbol = input('Enter ticker symbol:')
 start = time()
 
 try:
-	ticker = yf.Ticker(symbol)
+	ticker = yf.Ticker(symbol).upper()
 
 	share_float = str('float = M'), round(ticker.info['floatShares'] / 1000000, 1)
-	price = str('price = $'), round(ticker.info['currentPrice'] / 1, 10)
+	price = str('price = $'), round(ticker.info['currentPrice'] / 1, 2)
 
 	df = pd.DataFrame([share_float, price])
 	print(df)
